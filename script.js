@@ -1,3 +1,4 @@
+// menu desplegable
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.getElementById('divmenu');
     const navUl = document.getElementById('nav-ul');
@@ -11,3 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// imagenes desplegables - imagenes desplegables - imagenes desplegables -  
+function toggleImages(event, imageId) {
+    var image = document.getElementById(imageId);
+    var button = event.target;
+    if (image.style.display === 'none') {
+      image.style.display = 'block';
+      button.innerHTML = 'Ocultar imagenes';
+    } else {
+      image.style.display = 'none';
+      button.innerHTML = 'Ver imagenes';
+    }
+  }

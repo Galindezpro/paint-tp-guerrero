@@ -11,6 +11,11 @@ rojo 2: C32B31 */
     --amarillo-oscuro: #F9B233;
 }
 
+.hidden {
+    display: none;
+}
+
+
 @font-face {
     font-family: 'designer','sanf serif';
     src: url(Fuente/Designer.otf) format('opentype');
@@ -121,7 +126,9 @@ hr {
     margin-bottom: 5px;
 }
 
-.section1-quienes-somos {
+/* Section logos empresas */
+
+.section1 {
     text-align: justify;
     width: 100%;
     color: var(--rojo-claro);
@@ -135,13 +142,18 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 20px;
+    margin-bottom: 120px;
+    
 }
 
-.section1-quienes-somos__article1 {
+
+
+.section1__article1 {
     margin-bottom: 25px;
+   
 }
 
-.section1-quienes-somos__article1 .section1-quienes-somos__article1--h2 {
+.section1__article1 .section1__article1--h2 {
     font-family: 'designer';
     font-size: 2rem;
     text-align: center;
@@ -150,19 +162,15 @@ hr {
     color: var(--azul-oscuro);
     /* border-bottom: 4px solid var(--amarillo-claro); */
 }
-.section1-quienes-somos img {
-    width: 70px;
-    
-}
 
-.section1-quienes-somos__article2 {
+.section1__article2 {
     text-align: center;
     width: 100%;
     margin: 0 auto;
     max-width: 370px;
 }
 
-.section1-quienes-somos__article2 h3{
+.section1__article2 h3{
     font-family: 'designer';
     text-align: center;
     color: var(--azul-oscuro);
@@ -170,18 +178,62 @@ hr {
     margin-bottom: 15px;
 }
 
-.section1-quienes-somos__article2 li {
+.section1__article3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    position: relative;
-    font-weight: 600;
-    margin: 10px;
+    text-align: center;
 }
 
-.section1-quienes-somos__article2--ul {
-    columns: 2;
+.section1__article3 img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 9px;
 }
 
+.section1__article3 .section1__iconecasa,
+.section1__article3 .section1__icontemuco,
+.section1__article3 .section1__iconcareal,
+.section1__article3 .section1__iconaltius,
+.section1__article3 .section1__iconconsud {
+    margin-bottom: 14px;
+    margin-top: 5px;
+}
+
+
+.section2 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.section2 .section2__header {
+    font-family: 'designer';
+    font-size: 1.5rem;
+    color: var(--azul-oscuro);
+    margin-bottom: 30px;
+}
+
+.section2 .article {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid red;
+    margin-bottom: 25px;
+}
+
+.section2 .article h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'tommy3';
+    color: var(--rojo-oscuro);
+    margin-bottom: 8px;
+}
+
+.section2 img {
+    width: 100px;
+    display: none;
+}
