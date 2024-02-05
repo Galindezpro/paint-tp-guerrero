@@ -34,12 +34,12 @@ function toggleImages(event, imageId) {
     for (var i = 0; i < images.length; i++) {
       images[i].style.display = 'block';
     }
-    button.innerHTML = 'Ocultar imagenes';
+    button.innerHTML = 'Ocultar imagenes del proyecto';
   } else {
     for (var i = 0; i < images.length; i++) {
       images[i].style.display = 'none';
     }
-    button.innerHTML = 'Ver imagenes';
+    button.innerHTML = 'Ver imagenes del proyecto';
   }
 }
 
@@ -48,3 +48,4 @@ var images = document.getElementsByTagName('img');
 for (var i = 0; i < images.length; i++) {
   images[i].style.display = 'none';
 }
+
